@@ -66,8 +66,8 @@
         </tbody>
     </table>
 </div>
-<div class="row">
-    <a href="{{ url('bike/create') }}" class="btn btn-sucess">Añadir bicicleta</a>
+<div class="row" style="margin-top: 8px;">
+    <a href="{{ url('bike/create') }}" class="btn btn-primary">Añadir bicicleta</a>
 </div>
 @endsection
 
