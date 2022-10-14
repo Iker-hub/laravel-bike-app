@@ -26,9 +26,12 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
-        <button type="submit" class="btn btn-primary">Añadir</button>
-        &nbsp;
         <a href="{{ url('bike') }}" class="btn btn-primary">Volver</a>
+        &nbsp;
+        <form action="{{ url('bike') }}" method="post">
+            @csrf
+            <input type="submit" class="btn btn-primary" value="Añadir"/>
+        </form>
     </form>
 </div>
 @endsection
