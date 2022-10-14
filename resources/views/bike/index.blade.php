@@ -13,7 +13,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <form id="modalDeleteResourceForm" action="{{ url('bike/destroy') }}" method="post">
+        <form id="modalDeleteResourceForm" action="{{ url('bike/destroy') }}" method="delete">
             @method('delete')
             @csrf
             <input type="submit" class="btn btn-primary" value="Borrar bicicleta"/>
